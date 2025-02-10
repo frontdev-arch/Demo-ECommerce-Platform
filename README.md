@@ -29,7 +29,7 @@ Users should be able to:
 - View the cart and remove items from it
 
 ### Screenshot
-![image.alt](./screenshot.jpg)
+![Demo Project](https://github.com/frontdev-arch/Demo-ECommerce-Platform/blob/cb523534ab692440f7990ed5e2d6552cfe03054c/Image%2009-02-2025%20at%2019.34.jpeg)
 
 
 ### Links
@@ -46,41 +46,6 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - Vanilla JavaScript for interactivity
-
-
-## What I learned
-
-In this project, I focused on integrating JavaScript for cart functionality and thumbnail switching. Here are a few snippets to highlight some of the key areas:
-
-<!-- HTML snippet: The product display and thumbnail gallery -->
-<div class="image-container">
-  <img src="./images/image-product-1.jpg" class="img1" alt="Product Image" />
-  <div class="image-thumbnail">
-    <img class="img" src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" />
-    <img class="img" src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" />
-    <img class="img" src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" />
-    <img class="img" src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" />
-  </div>
-</div>
-
-<!-- CSS snippet: Hover effect on thumbnails -->
-.img:hover {
-  border: 1px solid #ff7d1a;
-  background-color: #fff;
-  opacity: 0.3;
-}
-
-<!-- JS snippet: Switching main product image -->
-const images = document.querySelectorAll(".img");
-const img1 = document.querySelector(".img1");
-
-images.forEach((img, index) => {
-  img.addEventListener("click", () => {
-    img1.src = `./images/image-product-${index + 1}.jpg`;
-  });
-});
-
-These implementations allowed me to dynamically update the product image based on thumbnail clicks, which was one of the core requirements of the challenge.
 
 ## Continued development
 
